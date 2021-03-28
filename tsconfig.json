@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "strict": false,
+    "module": "commonjs", // For changing "import/export" to "require()" in resulting code
+    "outDir": "build", // Resulting directory
+    "allowJs": true, // Allow running JS code
+    "moduleResolution": "node", // Way of resolving library module dependencies (this one uses node_modules)
+    "resolveJsonModule": true, // For resolving JSON properly
+    "allowSyntheticDefaultImports": true, // For being able to use destructuring in imports with JS/JSON
+    "esModuleInterop": true,
+    "types": [
+      "node"
+    ]
+  },
+  "include": ["src/**.ts"], // Source files
+  "exclude": ["node_modules", "**/*.spec.ts"] // Ignores
+}

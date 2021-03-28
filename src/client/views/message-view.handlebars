@@ -1,0 +1,16 @@
+<div id="message-view" style="display: flex; flex-direction: column; height: 100%">
+  {{#if with}}
+    <div id="with-info" style="padding: 20px; text-align: center">Chatting with <b>{{with.name}}</b></div>
+  {{/if}}
+  <div id="messages" style="flex-grow: 1; border: 1px solid black; border-radius: 5px; padding: 20px; overflow-y: auto;">
+    {{#if with}}
+      <ul style="list-style-type: none; margin: 0; padding: 0;">
+        {{#each messages}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <h3 style="display: flex; justify-content: center; align-items: center">Please choose new conversation</h3>
+    {{/if}}
+  </div>
+</div>
